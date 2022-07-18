@@ -5,7 +5,7 @@ interface HelloWorldProps {
 }
 
 const HelloWorld = ({}: HelloWorldProps) => {
-  return <FlexContainer>Hey 👋</FlexContainer>
+  return <FlexContainer>Public Goods</FlexContainer>
 }
 
 export default HelloWorld
