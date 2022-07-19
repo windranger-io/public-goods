@@ -1,14 +1,7 @@
-import tw from 'twin.macro'
 import Header from 'components/Header'
 
-const FlexContainer = tw.div`flex  flex-col`
-
 const Home = () => {
-  return (
-    <FlexContainer>
-      <Header />
-    </FlexContainer>
-  )
+  return <Header />
 }
 
 export default Home

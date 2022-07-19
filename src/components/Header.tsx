@@ -1,11 +1,9 @@
-import { FlexContainer } from './styles'
-
 interface HelloWorldProps {
   foo?: string
 }
 
 const HelloWorld = ({}: HelloWorldProps) => {
-  return <FlexContainer>Public Goods</FlexContainer>
+  return <div>Public Good</div>
 }
 
 export default HelloWorld
