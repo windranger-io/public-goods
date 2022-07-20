@@ -1,6 +1,9 @@
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import Script from 'next/script'
+import { ChakraProvider } from '@chakra-ui/react'
+import { theme } from '../theme/index'
+import Fonts from 'theme/fonts'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -56,7 +59,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         `}
       </Script>
 
-      <Component {...pageProps} />
+      <ChakraProvider theme={theme}>
+        <Fonts />
+        <Component {...pageProps} />
+      </ChakraProvider>
     </>
   )
 }
