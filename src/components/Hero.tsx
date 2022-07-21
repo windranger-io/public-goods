@@ -33,6 +33,15 @@ const Hero = () => {
             height={70}
           />
           <Box textAlign="center" maxWidth="980px" margin="0 auto">
+            <Box width={{ base: '46px', sm: '67px' }} margin="0 auto 43px">
+              <Image
+                alt="Public Goods Logo"
+                src="/images/union.svg"
+                layout="responsive"
+                width={67.5}
+                height={50}
+              />
+            </Box>
             <Text
               color="brand.white"
               fontSize={{ base: '45px', md: '72px' }}
