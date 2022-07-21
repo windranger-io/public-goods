@@ -16,11 +16,9 @@ export const Text = {
       fontFamily: 'Inter, sans-serif',
     },
     italic: {
-      display: 'inline',
       fontFamily: 'Nib Italic Pro',
     },
     semiBold: {
-      display: 'inline',
       fontFamily: 'Nib Semibold Pro',
     },
     indent: {
