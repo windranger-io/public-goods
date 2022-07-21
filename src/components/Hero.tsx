@@ -22,6 +22,7 @@ const Hero = () => {
           flexDirection="column"
           justifyContent="space-between"
           width="100%"
+          pt={{ base: '48px', md: '114px' }}
         >
           <Image
             alt="Public Goods Logo"
