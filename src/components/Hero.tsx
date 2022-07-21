@@ -23,6 +23,8 @@ const Hero = () => {
           justifyContent="space-between"
           width="100%"
           pt={{ base: '48px', md: '114px' }}
+          pb={{ base: '40px', md: '52px' }}
+          px="30px"
         >
           <Image
             alt="Public Goods Logo"
@@ -30,22 +32,32 @@ const Hero = () => {
             width={250}
             height={70}
           />
-          <Box textAlign="center">
+          <Box textAlign="center" maxWidth="980px" margin="0 auto">
             <Text
               color="brand.white"
               fontSize={{ base: '45px', md: '72px' }}
               lineHeight={{ base: '45px', md: '72px' }}
+              letterSpacing="-2px"
             >
               {' '}
-              Building a positive⇀︎sum world through new mechanisms for public
+              Building a positive⇀︎sum world through{' '}
+              <span style={{ fontFamily: 'Nib Italic Pro' }}>new</span>{' '}
+              mechanisms
+              <br />
+              <span style={{ fontFamily: 'Nib Italic Pro' }}>for</span> public
               goods.
             </Text>
-            <Button>Read Proposal</Button>
+            <Box my="43px">
+              <Button variant="brand">Read proposal</Button>
+            </Box>
             <Text
               textTransform="uppercase"
-              size="small"
+              fontSize={{ base: '11px', md: '12px' }}
+              lineHeight={{ base: '17px', md: '19px' }}
               variant="inter"
               color="brand.white"
+              maxWidth={{ base: '277px', md: '544px' }}
+              margin="0 auto "
             >
               Public goods DAO, focused on accelerating the web3 public goods
               ecosystem. proposed by Gitcoin and BitDAO.
