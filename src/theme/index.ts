@@ -1,11 +1,13 @@
 import { extendTheme } from '@chakra-ui/react'
 import { Text } from './text'
 import { Button } from './button'
+import { Link } from './link'
 
 export const theme = extendTheme({
   components: {
     Text,
     Button,
+    Link,
   },
   colors: {
     brand: {

@@ -1,10 +1,26 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Grid, Link, Text } from '@chakra-ui/react'
+// import NextLink from 'next/link'
 import Image from 'next/image'
 
 const Footer = () => {
   return (
     <Box mx={{ base: '16px', md: '60px' }}>
       <Separator />
+      <Box
+        display={'flex'}
+        justifyContent={{ base: 'center', md: 'space-between' }}
+      >
+        <Box display={{ base: 'none', md: 'block' }}>
+          <Text variant="inter" fontSize={'12px'} color="rgba(34, 83, 80, 0.5)">
+            PG DAO, {new Date().getFullYear()}{' '}
+          </Text>
+        </Box>
+        <Grid templateColumns="repeat(3, 1fr)" textAlign={'center'}>
+          <Link variant="as-footer">Twitter</Link>
+          <Link variant="as-footer">Mail</Link>
+          <Link variant="as-footer">Proposal</Link>
+        </Grid>
+      </Box>
       <Box>
         <Image
           alt="Public Goods Logo"
