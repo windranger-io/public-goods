@@ -9,6 +9,7 @@ const Footer = () => {
       <Box
         display={'flex'}
         justifyContent={{ base: 'center', md: 'space-between' }}
+        mt="16px"
       >
         <Box display={{ base: 'none', md: 'block' }}>
           <Text variant="inter" fontSize={'12px'} color="rgba(34, 83, 80, 0.5)">
@@ -21,7 +22,7 @@ const Footer = () => {
           <Link variant="as-footer">Proposal</Link>
         </Grid>
       </Box>
-      <Box>
+      <Box mb={{ base: '40px', md: '100px' }} mt={{ base: '20px', md: '50px' }}>
         <Image
           alt="Public Goods Logo"
           src="/images/public-goods.svg"
