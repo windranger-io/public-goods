@@ -22,7 +22,7 @@ export const Text = {
       fontFamily: 'Nib Semibold Pro',
     },
     indent: {
-      marginBottom: '44px',
+      // marginBottom: '44px',
       textIndent: '40px',
     },
   },

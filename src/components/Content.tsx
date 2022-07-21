@@ -1,9 +1,20 @@
-import { Box, Container, Text } from '@chakra-ui/react'
+import { Box, Grid, Input, Link, Text, Button } from '@chakra-ui/react'
 
 const Content = () => {
   return (
-    <Box>
-      <Container textAlign="justify">
+    <Box
+      mx="16px"
+      mt={{ base: '80px', md: '34px' }}
+      mb={{ base: '80px', md: '115px' }}
+    >
+      <Grid
+        maxWidth="663px"
+        templateRows="3"
+        gridGap={'40px'}
+        textAlign="justify"
+        margin="0 auto"
+      >
+        {/* Start Body copy */}
         <Text variant="indent">
           pgDAO is an impact investment DAO,{' '}
           <Text as="span" variant="italic">
@@ -53,9 +64,101 @@ const Content = () => {
           </Text>
           .
         </Text>
-      </Container>
+        {/* End Body copy */}
+        <SignUp />
+        {/* Start Connect */}
+        <Box>
+          <Text textAlign={'left'}>
+            Follow us on&nbsp;
+            <Link borderBottom="1px solid">
+              <Text as="span" variant="semiBold">
+                Twitter
+              </Text>
+            </Link>{' '}
+            for the latest updates or get in touch via&nbsp;
+            <Link>
+              <Text as="span" variant="semiBold">
+                mail.
+              </Text>
+            </Link>
+          </Text>
+        </Box>
+        {/* End Connect */}
+      </Grid>
     </Box>
   )
 }
 
 export default Content
+
+const SignUp = () => {
+  return (
+    <form
+      action="https://www.getrevue.co/profile/pgDAO/add_subscriber"
+      method="post"
+      id="revue-form"
+      name="revue-form"
+      target="_blank"
+    >
+      {/* <input placeholder="Your email address..." type="email" name="member[email]" id="member_email"></input>
+      <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"></input> */}
+      <Box display="flex">
+        <Input
+          variant="unstyled"
+          placeholder="Type your email address..."
+          type="email"
+          name="member[email]"
+          id="member_email"
+        />
+        <Button
+          variant="submit"
+          type="submit"
+          value="Sign up"
+          name="member[subscribe]"
+          id="member_submit"
+        >
+          Sign up
+        </Button>
+      </Box>
+      <Separator />
+      <Text
+        variant="inter"
+        fontSize={'12px'}
+        textTransform="uppercase"
+        textAlign={'center'}
+        letterSpacing="0.01em"
+        mt="15px"
+      >
+        By subscribing, you agree with Revue&apos;s Terms of Service and Privacy
+        Policy.
+      </Text>
+    </form>
+  )
+}
+
+const Separator = () => {
+  return (
+    <Box
+      display="flex"
+      width="100%"
+      justifyContent={'space-between'}
+      alignItems="center"
+    >
+      <Box
+        width="5px"
+        height="5px"
+        bg="#225350"
+        transform="rotate(45deg)"
+        ml="-3px"
+      />
+      <Box height="1px" width={'100%'} background="#225350" />
+      <Box
+        width="5px"
+        height="5px"
+        bg="#225350"
+        transform="rotate(45deg)"
+        mr="-3px"
+      />
+    </Box>
+  )
+}

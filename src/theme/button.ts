@@ -24,6 +24,10 @@ export const Button = {
         outline: '1px solid #ffffff',
       },
     },
+    submit: {
+      fontFamily: 'Nib Semibold Pro',
+      padding: '0',
+    },
   },
   // default values for `size` and `variant`
 }
