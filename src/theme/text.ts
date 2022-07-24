@@ -23,7 +23,7 @@ export const Text = {
     },
     indent: {
       // marginBottom: '44px',
-      textIndent: '40px',
+      textIndent: '56px',
     },
   },
   // default values for `size` and `variant`

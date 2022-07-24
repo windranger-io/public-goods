@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <Box>
       <Box position="relative" mx={{ base: 0, md: '48px' }}>
-        <Box height={{ base: '100vh', md: '1504px' }}>
+        <Box height={{ base: '110vh', md: '115vh' }}>
           <Image
             alt="hero"
             src="/images/hero.png"
@@ -44,8 +44,8 @@ const Hero = () => {
             </Box>
             <Text
               color="brand.white"
-              fontSize={{ base: '45px', md: '72px' }}
-              lineHeight={{ base: '45px', md: '72px' }}
+              fontSize={{ base: '40px', md: '72px' }}
+              lineHeight={{ base: '40px', md: '72px' }}
               letterSpacing="-2px"
             >
               {' '}

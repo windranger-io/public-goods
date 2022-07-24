@@ -10,7 +10,7 @@ const Content = () => {
       <Grid
         maxWidth="663px"
         templateRows="3"
-        gridGap={'40px'}
+        gridGap={'26px'}
         textAlign="justify"
         margin="0 auto"
       >
