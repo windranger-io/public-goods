@@ -12,7 +12,7 @@ export const Link = {
   // styles for different visual variants ("outline", "solid")
   variants: {
     'as-footer': {
-      color: 'rgba(34, 83, 80, 0.5)',
+      color: 'rgba(34, 83, 80, 0.8)',
       fontFamily: 'Inter, sans-serif',
       fontSize: '12px',
       fontWeight: '400',
