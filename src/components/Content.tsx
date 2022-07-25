@@ -1,4 +1,5 @@
 import { Box, Grid, Input, Link, Text, Button } from '@chakra-ui/react'
+import NextLink from 'next/link'
 
 const Content = () => {
   return (
@@ -70,17 +71,22 @@ const Content = () => {
         <Box>
           <Text textAlign={'left'}>
             Follow us on&nbsp;
-            <Link borderBottom="1px solid">
-              <Text as="span" variant="semiBold">
-                Twitter
-              </Text>
-            </Link>{' '}
+            <NextLink href="https://twitter.com/PGcoalition" passHref>
+              <Link borderBottom="1px solid">
+                <Text as="span" variant="semiBold">
+                  Twitter
+                </Text>
+              </Link>
+            </NextLink>{' '}
             for the latest updates or get in touch via&nbsp;
-            <Link>
-              <Text as="span" variant="semiBold">
-                mail.
-              </Text>
-            </Link>
+            <NextLink href="mailto:partnerships@gitcoin.co" passHref>
+              <Link borderBottom="1px solid">
+                <Text as="span" variant="semiBold">
+                  mail
+                </Text>
+              </Link>
+            </NextLink>
+            .
           </Text>
         </Box>
         {/* End Connect */}

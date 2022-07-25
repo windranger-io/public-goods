@@ -1,5 +1,5 @@
 import { Box, Grid, Link, Text } from '@chakra-ui/react'
-// import NextLink from 'next/link'
+import NextLink from 'next/link'
 import Image from 'next/image'
 
 const Footer = () => {
@@ -17,8 +17,12 @@ const Footer = () => {
           </Text>
         </Box>
         <Grid templateColumns="repeat(3, 1fr)" textAlign={'center'}>
-          <Link variant="as-footer">Twitter</Link>
-          <Link variant="as-footer">Mail</Link>
+          <NextLink href="https://twitter.com/PGcoalition" passHref>
+            <Link variant="as-footer">Twitter</Link>
+          </NextLink>
+          <NextLink href="mailto:partnerships@gitcoin.co" passHref>
+            <Link variant="as-footer">Mail</Link>
+          </NextLink>
           <Link variant="as-footer">Proposal</Link>
         </Grid>
       </Box>
