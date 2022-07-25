@@ -90,7 +90,7 @@ const Attribution = () => {
       mt="16px"
       opacity="0.5"
     >
-      Landscape with the Palace at Caserta and Vesuvius
+      Based on Landscape with the Palace at Caserta and Vesuvius
       <br />
       by Jacob Philipp Hackert ‘1793
     </Text>
