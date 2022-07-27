@@ -31,9 +31,9 @@ const GlobalStyle = () => (
         .grain:after{
           content:"";
           background-image:url("https://upload.wikimedia.org/wikipedia/commons/7/76/1k_Dissolve_Noise_Texture.png");
-          height: 300%;
-          width: 300%;
-          position: fixed;
+          height: 200%;
+          width: 200%;
+          position: absolute;
           opacity:0.1;
            animation: animateGrain 8s steps(10) infinite;
         }
