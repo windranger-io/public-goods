@@ -68,16 +68,18 @@ const Content = () => {
         {/* End Body copy */}
         <SignUp />
         {/* Start Connect */}
-        <Box display="flex" alignContent={'center'}>
-          <Text>Follow us on&nbsp;</Text>
-          <NextLink href="https://twitter.com/PGcoalition" passHref>
-            <Link variant="as-content">Twitter</Link>
-          </NextLink>
-          <Text>&nbsp;for the latest updates or get in touch via&nbsp;</Text>
-          <NextLink href="mailto:partnerships@gitcoin.co" passHref>
-            <Link variant="as-content">mail</Link>
-          </NextLink>
-          <Text>.</Text>
+        <Box>
+          <Text>
+            Follow us on&nbsp;
+            <NextLink href="https://twitter.com/PGcoalition" passHref>
+              <Link variant="as-content">Twitter</Link>
+            </NextLink>
+            &nbsp;for the latest updates or get in touch via&nbsp;
+            <NextLink href="mailto:partnerships@gitcoin.co" passHref>
+              <Link variant="as-content">mail</Link>
+            </NextLink>
+            .
+          </Text>
         </Box>
         {/* End Connect */}
       </Grid>

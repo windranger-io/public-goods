@@ -5,7 +5,7 @@ export const Button = {
     color: 'brand.green',
     transition: 'all 0.2s ease',
     _hover: {
-      transform: 'scale(1.1)',
+      transform: 'scale(1.05)',
     },
   },
   // styles for different sizes ("sm", "md", "lg")
