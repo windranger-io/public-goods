@@ -9,8 +9,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>Site Name</title>
-        <meta name="description" content="DESCRIPTION" />
+        <title>Public Goods — pgDAO</title>
+        <meta name="title" content="Public Goods — pgDAO" />
+        <meta
+          name="description"
+          content="Building a positive⇀︎sum world through new mechanisms for public goods."
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
@@ -31,15 +35,21 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <link rel="manifest" href="/site.webmanifest" />
         <meta property="og:type" content="website" />
-        <meta property="og:site_name" content="SITE_NAME" />
-        <meta property="og:title" content="SITE_TITLE" />
+        <meta property="og:site_name" content="Public Goods — pgDAO" />
+        <meta property="og:title" content="Public Goods — pgDAO<" />
         <meta property="og:image" content="ABSOLUTE_URL_TO_PREVIEW_IMAGE" />
-        <meta property="og:description" content="DESCRIPTION" />
+        <meta
+          property="og:description"
+          content="Building a positive⇀︎sum world through new mechanisms for public goods."
+        />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@TWITTER_HANDLE" />
-        <meta name="twitter:creator" content="@TWITTER_HANDLE" />
-        <meta name="twitter:title" content="SITE_TITLE" />
-        <meta name="twitter:description" content="DESCRIPTION" />
+        <meta name="twitter:site" content="@PGcoalition" />
+        <meta name="twitter:creator" content="@PGcoalition" />
+        <meta name="twitter:title" content="Public Goods — pgDAO<" />
+        <meta
+          name="twitter:description"
+          content="Building a positive⇀︎sum world through new mechanisms for public goods."
+        />
         <meta
           name="twitter:image:src"
           content="ABSOLUTE_URL_TO_PREVIEW_IMAGE"
