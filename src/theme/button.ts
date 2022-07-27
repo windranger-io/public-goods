@@ -3,7 +3,10 @@ export const Button = {
   baseStyle: {
     borderRadius: '40px',
     color: 'brand.green',
-    // fontSize: '18px',
+    transition: 'all 0.2s ease',
+    _hover: {
+      transform: 'scale(1.1)',
+    },
   },
   // styles for different sizes ("sm", "md", "lg")
   sizes: {},

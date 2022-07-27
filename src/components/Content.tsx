@@ -68,26 +68,16 @@ const Content = () => {
         {/* End Body copy */}
         <SignUp />
         {/* Start Connect */}
-        <Box>
-          <Text textAlign={'left'}>
-            Follow us on&nbsp;
-            <NextLink href="https://twitter.com/PGcoalition" passHref>
-              <Link borderBottom="1px solid">
-                <Text as="span" variant="semiBold">
-                  Twitter
-                </Text>
-              </Link>
-            </NextLink>{' '}
-            for the latest updates or get in touch via&nbsp;
-            <NextLink href="mailto:partnerships@gitcoin.co" passHref>
-              <Link borderBottom="1px solid">
-                <Text as="span" variant="semiBold">
-                  mail
-                </Text>
-              </Link>
-            </NextLink>
-            .
-          </Text>
+        <Box display="flex" alignContent={'center'}>
+          <Text>Follow us on&nbsp;</Text>
+          <NextLink href="https://twitter.com/PGcoalition" passHref>
+            <Link variant="as-content">Twitter</Link>
+          </NextLink>
+          <Text>&nbsp;for the latest updates or get in touch via&nbsp;</Text>
+          <NextLink href="mailto:partnerships@gitcoin.co" passHref>
+            <Link variant="as-content">mail</Link>
+          </NextLink>
+          <Text>.</Text>
         </Box>
         {/* End Connect */}
       </Grid>
@@ -106,8 +96,6 @@ const SignUp = () => {
       name="revue-form"
       target="_blank"
     >
-      {/* <input placeholder="Your email address..." type="email" name="member[email]" id="member_email"></input>
-      <input type="submit" value="Subscribe" name="member[subscribe]" id="member_submit"></input> */}
       <Box display="flex">
         <Input
           variant="unstyled"
