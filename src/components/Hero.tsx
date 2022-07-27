@@ -4,8 +4,8 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <Box>
-      <Box position="relative" mx={{ base: 0, md: '48px' }}>
-        <Box height={{ base: '110vh', md: '115vh' }}>
+      <Box position="relative" mx={{ base: 0, md: '48px' }} maxWidth="2048px">
+        <Box height={{ base: '110vh', md: '115vh' }} maxWidth="300px">
           <Image
             alt="hero"
             src="/images/hero.png"
