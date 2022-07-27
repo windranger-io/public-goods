@@ -29,17 +29,16 @@ const Hero = () => {
           <Image
             alt="Public Goods Logo"
             src="/images/logo.svg"
-            width={250}
-            height={70}
+            width={'250px'}
+            height={'70px'}
           />
           <Box textAlign="center" maxWidth="980px" margin="0 auto">
             <Box width={{ base: '46px', sm: '67px' }} margin="0 auto 43px">
               <Image
                 alt="Public Goods Logo"
                 src="/images/union.svg"
-                layout="responsive"
-                width={67.5}
-                height={50}
+                width={'67.5px'}
+                height={'50px'}
               />
             </Box>
             <Text
