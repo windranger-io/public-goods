@@ -1,13 +1,15 @@
-import tw from 'twin.macro'
-import Header from 'components/Header'
-
-const FlexContainer = tw.div`flex  flex-col`
+import { Box } from '@chakra-ui/react'
+import Hero from 'components/Hero'
+import Content from 'components/Content'
+import Footer from 'components/Footer'
 
 const Home = () => {
   return (
-    <FlexContainer>
-      <Header />
-    </FlexContainer>
+    <Box>
+      <Hero />
+      <Content />
+      <Footer />
+    </Box>
   )
 }
 
