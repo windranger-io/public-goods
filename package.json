@@ -23,7 +23,7 @@
     "@babel/core": "7.18.9",
     "@commitlint/cli": "15.0.0",
     "@commitlint/config-conventional": "15.0.0",
-    "@emotion/babel-plugin": "11.9.5",
+    "@emotion/babel-plugin": "11.10.0",
     "@testing-library/jest-dom": "5.16.4",
     "@testing-library/react": "12.1.5",
     "@testing-library/user-event": "13.5.0",
